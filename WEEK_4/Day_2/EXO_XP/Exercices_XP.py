@@ -1,4 +1,4 @@
-'''# Exercise 1
+'''# Exercise 1 : Set
 
 
 # question 1
@@ -36,14 +36,14 @@ print(len(our_fav_numbers))'''
 
 
 
-# Exercise 2
+# Exercise 2 : Tuple
 
 '''Non il n'est pas possible d'ajouter des entier a ce tuple d'entiers car un tuple n'est pas modifiable une fois crreer car il n'a pas de methode append ou extend. Les tuples sont immuables.
 Cependant on peut creer un nouveau tuple et faire concatenation avec l'ancien tuple avec l'operateur + '''
 
 
 
-# Exercise 3
+# Exercise 3 : List
 
 '''basket = ["Banana", "Apples", "Oranges", "Blueberries"]
 print(basket)
@@ -98,7 +98,23 @@ print("*************************************************************************
 
 
 
-# Exercise 5
+
+# Exercice 4 : Floats
+
+
+'''Un float est un type de données numérique qui permet de représenter des valeurs décimales.Cela signifie que les flotteurs
+peuvent être utilisés pour représenter des nombres avec des décimals, comme 1.5, etc
+
+On peut generer une boucle de flotteurs de maniere itterative.
+
+
+flotteurs = []
+for i in range(3, 11):
+    flotteurs.append(i / 2)
+print(flotteurs)'''
+
+
+# Exercise 5 : For Loop
 
 
 # question 1
@@ -114,7 +130,7 @@ for i in mes_nombres:
 		print(i)'''
 
 
-# Exercice 6
+# Exercice 6 : While Loop
 
 '''votre_nom = input("Veuillez entrer votre nom : ")
 my_name = "Mohamed"
@@ -123,7 +139,7 @@ while votre_nom.lower() != my_name.lower():
 	votre_nom = input("Veuillez entrer votre nom : ")
 print("Supeerrrr")'''
 
-# Exercice 7
+# Exercice 7 : Favorite Fruits
 
 '''fruits = input("Veuillez entrer votre ou vos fruits preferer separer d'un espace svp : ")
 fruits_pref = fruits.split(" ")
@@ -138,7 +154,7 @@ else:
 	print("La nouvelle liste de vos fruit preferer sont : ", fruits_pref)'''
 
 
-# Exercice 8
+# Exercice 8 : Who Ordered A Pizza ?
 
 '''ma_pizza = []
 prix_unit_garni = 10
@@ -153,10 +169,60 @@ prix_pizza = prix_unit_garni + (len(ma_pizza) * 2.5)
 print("Le prix total de votre pizza est de " + str(prix_pizza) + " dollars.")'''
 
 
-# Exercice 9
+# Exercice 9 : Cinemax
+
+'''membre_famille = int(input("Saisissez le nombre total de la famille qui veulent un billet : "))
+prix_total_des_billets = 0
+membre_de_la_famile = range(membre_famille)
+for i in membre_de_la_famile:
+	age = int(input(f"Saisissez du membre de la famille n°{(i+1)}: "))
+	if age < 3:
+		prix_total_des_billets = prix_total_des_billets + 0
+	elif age < 12:
+		prix_total_des_billets = prix_total_des_billets + 10
+	else:
+		prix_total_des_billets = prix_total_des_billets + 15
+print(f"Le prix total des billet de la famille coutera {prix_total_des_billets} dollars")
 
 
-# Exercice 10
+list_ado = ['Issouf', 'Saadoukou', 'Mhd', 'Clement', 'Patrick','Simon']
+for nom_ado in list_ado:
+  age_ado = int(input(f"Saisissez votre age, {nom_ado}: "))
+  if age_ado < 16 or age_ado > 21:
+    list_ado.remove(nom_ado)
+print(list_ado)'''
 
 
-# Exercice 11
+# Exercice 10 : Sandwich Orders
+
+
+'''sandwich_orders = ["sandwich au Tuna", "sandwich a Avocado", "sandwich aux oeufs", "sandwich au Sabih", "sandwich au Pastrami"]
+vos_sandwiches = []
+while sandwich_orders:
+  sandwich = sandwich_orders.pop(0)
+  print(f"Le sandwiche {sandwich} est en cours de preparation")
+  vos_sandwiches.append(sandwich)
+  print(vos_sandwiches)
+print("J'ai fait vos : ")
+for sandwich in vos_sandwiches:
+  print(f"{sandwich}")'''
+
+
+# Exercice 11 : Sandwich Orders#2
+
+'''sandwich_orders = ["sandwich au Tuna","sandwich au Pastrami", "sandwich a Avocado","sandwich au Pastrami" "sandwich aux oeufs", "sandwich au Sabih", "sandwich au Pastrami"]
+sandwich_orders += ["sandwich au Pastrami"] * 2
+print()
+vos_sandwiches = []
+while sandwich_orders:
+  sandwich = sandwich_orders.pop(0)
+  if sandwich == "sandwich au Pastrami":
+    print("Désolé, nous sommes à court de sandwich pastrami.")
+    continue
+  print(f"Je prépare votre {sandwich}")
+  vos_sandwiches.append(sandwich)
+
+# Affiche un message répertoriant chaque sandwich qui a été fabriqué
+print("J'ai fait vos : ")
+for sandwich in vos_sandwiches:
+  print(f"{sandwich}")'''
