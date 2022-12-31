@@ -1,3 +1,5 @@
+
+
 '''# Exercise 1 : Set
 
 
@@ -221,8 +223,9 @@ while sandwich_orders:
     continue
   print(f"Je prépare votre {sandwich}")
   vos_sandwiches.append(sandwich)
-
-# Affiche un message répertoriant chaque sandwich qui a été fabriqué
 print("J'ai fait vos : ")
 for sandwich in vos_sandwiches:
   print(f"{sandwich}")'''
+
+
+history_marks = sample_dict['class']['student']['marks']['history']
