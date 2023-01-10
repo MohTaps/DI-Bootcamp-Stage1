@@ -1,4 +1,12 @@
-mot = input("Entrer un mot svp: ")
+from os import system
+
+import re
+
+mot = input("\nEntrer un mot sans caractere speciale ni d'espaces svp: ")
+
+while not re.match(r'^[a-zA-Z]+$', mot):
+  print("\nVeuillez bien relire les consignes, entrer uniquement des lettres.")
+  mot = input("\nEntrer un mot sans caractere speciale ni d'espaces svp: ")
 
 lettre_index = {}
 
@@ -9,9 +17,12 @@ for i in range(len(mot)):
     else:
         lettre_index[lettre] = [i]
 
+print("Syntaxe correct\n")
+
 print(lettre_index)
 
-
+system("pause")
+system("cls")
 
 
 tous_les_produits = {
@@ -44,7 +55,6 @@ if produits:
 
 else:
   print("Nothing : ")
-
 
 
 
