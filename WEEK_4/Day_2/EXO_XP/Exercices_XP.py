@@ -228,4 +228,4 @@ for sandwich in vos_sandwiches:
   print(f"{sandwich}")'''
 
 
-history_marks = sample_dict['class']['student']['marks']['history']
+#history_marks = sample_dict['class']['student']['marks']['history']
